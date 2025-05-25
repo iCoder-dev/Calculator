@@ -1,35 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
-    margin-top: 20%;
-    margin-left: 20%;
-    width: 55%;
-    background-color: orange;
+.container {
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 30%;
+    background-color: #0D0D0D;
 }
-h1,h3{
+
+h1, h3 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     padding: 20px;
-    
+    margin-left: 70px;
+    color: #87CEEB;
 }
-input{
+
+input {
     padding: 20px;
     margin: 10px;
-    width: 70%;
-    color: gray;
+    color: white;
+    background-color: #0D0D0D;
+    width: calc(100% - 20px);
+
 }
-button{
+
+button {
     color: gray;
     padding: 17px;
     margin: 15px;
     cursor: pointer;
+    background-color: #87CEEB;
 }
-button:hover{
+
+button:hover {
     transform: scale(1.2);
     transition: 0.2s ease-in-out;
     color: black;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin-left: 5%;
+        width: 90%;
+        margin-top: 5%;
+    }
+    
+    h1, h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    input {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-left: 2%;
+        width: 96%;
+    }
+    
+    input, button {
+        padding: 15px;
+        margin: 8px;
+    }
 }
